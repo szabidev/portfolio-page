@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/e9dda2f7a0.js" crossorigin="anonymous"></script>
+        <script src="foo.js"></script>
+        <title>Szabi Vojtek</title>
+    </head>
+    <body>
+        <header class="main">
+            <!-- create navbar with hamburger icon -->
+            <div id="header">
+                <nav class="navbar">
+                    <h2 class="myName"><a href="#header">this.szabi<span class="braces">( )</span></a></h2>
+                    <div class="menu-btn">
+                        <div id="menuButtonBurger"></div>
+                    </div>            
+                </nav>
+                <div class="info">
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>           
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- create a small introduction place with a picture -->
+        <section id="about">
+            <article class='text-about-me'>
+                <div class="name">
+                    <h3>Hi! I am Szabi Vojtek</h3>
+                    <p>Front-End Developer</p>
+                    <img class="self" src="./image/szabi2.jpg"/>
+                </div>
+                <div class="about-me">
+                    <p class="welcome">Welcome to my page! </p>
+                    <p class="underline"></p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo recusandae perferendis impedit culpa distinctio minima quod, consequuntur sed a ullam....</p>
+                    <p class="text">No.. No.. I'm just kidding! </p>
+                    <p class="text">I am a professional bartender and insatiable burger eater, who wanted to 
+                        take on another challenge, so decided to learn Web Development. I enjoy creating simple, clean, well designed webpages that passes the information neatly to the user.
+                        I am a self-tought developer, who will enroll in the <a href="https://scoalainformala.ro/">"Informal shcool of IT"</a> to further extend my knowledge,
+                        in these past months I studied extensively every day, and got comfortable with technologies I considered magic, or impossible to learn before,
+                        and most importantly I learned how to Google so, I've quit watching tutorials and courses and started making my own projects.
+                    </p>
+                </div>
+            </article>
+            <!-- create a div for technologies ive learnt -->
+        </section>
+        <h2 class="skills-header">Skills</h2>
+        <p class="header-underline"></p>
+        <section class="skills">
+            <div class="skills-container">
+                <img class="skills-img" src="./svg/html5.svg">
+                <h2>Html5</h2>
+                <p>Started my journey with the very basics, so I learned HTML5, what exactly is a tag, and suddenly webpages made more senste to me.</p>
+            </div>
+            <div class="skills-container">
+                <img class="skills-img" src="./svg/css3.svg">
+                <h2>CSS3</h2>
+                <p>Then I continued my journey, as the plain HTML tags were not that great looking without styling. Hence CSS3 and it's many, many aspects.</p>
+            </div>
+            <div class="skills-container">
+                <img class="skills-img" src="./svg/javaScript.svg">
+                <h2>JavaScript</h2>
+                <p>After that I needed some interaction on my webpage, so I started learning the basics of JavaScript, then continued with DOM manipulation, ES6 features, Asynchronous programming and OOP.</p>
+            </div>
+            <div class="skills-container">
+                <img class="skills-img" src="./svg/bootstrap.svg">
+                <h2>Bootstrap</h2>
+                <p>No time?... No worries... Bootstrap to the rescue. Quickly style responsive webpages for all devices.</p>
+            </div>
+            <div class="skills-container">
+                <img class="skills-img" src="./svg/jQuery.svg">
+                <h2>jQuery</h2>
+                <p>What can I say? Maybe one word... Efficiency. Yeah, that sums it up.</p>
+            </div>              
+            <div class="skills-container">
+                <img class="skills-img" src="./svg/react.svg">
+                <h2>React JS</h2>
+                <p>React JS, fast, intuitive, definitely a challenge, but I love it.</p>
+            </div>              
+        </section>
+        <!-- create a div to place my projects -->
+        <section class="projects" id="projects">
+            <h2 class=projects-header>Projects</h2>
+            <p class="header-underline"></p>
+            <div class="projects-container">
+                <div class="project">
+                    <div class="project-description">
+                        <p>Like this tic-tac-toe game made with vanilla JavaScript</p>
+                    </div>
+                    <div class="project-info">
+                        <h3>Tic-Tac-Toe</h3>
+                        <a href="https://szabidev.github.io/tic-tac-toe/" target="_blank">Demo</a>
+                        <a href="https://github.com/szabidev/tic-tac-toe" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-description">
+                        <p>Or this To-do app using jQuery</p>
+                    </div>
+                    <div class="project-info">
+                        <h3>To-Do App</h3>
+                        <a href="https://szabidev.github.io/todoapp/" target="_blank">Demo</a>
+                        <a href="https://github.com/szabidev/todoapp" target="_blank">GitHub</a>
+                    </div>
+                </div>            
+                <div class="project">
+                    <div class="project-description">
+                        <p>Or the project I made when I was studying with CodeCademy, to better understand JavaScript</p>
+                    </div>
+                    <div class="project-info">
+                        <h3>ChoreDoor Game</h3>
+                        <a href="https://szabidev.github.io/Chore-Door/" target="_blank">Demo</a>
+                        <a href="https://github.com/szabidev/Chore-Door" target="_blank">Github</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact-header">
+                <h2>Get in touch</h2>
+                <p class="header-underline"></p>
+            </div>
+            <div class="contact-container">
+                <form class="form" id="my-form" action="https://formspree.io/f/mdopdqra" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="What's your name?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="10" cols="40" placeholder="Enter your message..." required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div id="status"></div>
+        </section>
+        <footer class="footer">
+            <h2>Szabi Vojtek</h2>
+            <p class="header-underline"></p>
+            <div class="social">
+                <a href="https://www.facebook.com/szabi.vojtek" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/szabi.vojtek" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.github.com/szabidev" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/szabolcs-vojtek-0391851b2/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+        <!-- create a div for contact information, social icons -->
+        <!-- create a footer -->
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
