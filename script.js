@@ -1,15 +1,26 @@
 const hamburger = document.querySelector('.menu-btn');
 const info = document.querySelector('.info');
 const list = document.querySelector('ul');
+const menuLink = document.querySelectorAll('.hide .info ul li a');
 
 hamburger.addEventListener('click', menuToggle);
 
 function menuToggle() {
-    console.log('clicked')
     info.classList.toggle('open');
     list.classList.toggle('open');
 }
 
+menuLink.forEach((item) => {
+    item.addEventListener('click', () => {
+        console.log('clicked')
+        info.classList.toggle('open');
+        list.classList.toggle('open')
+    })
+})
+
+
+
+// Email submission
 window.addEventListener("DOMContentLoaded", function () {
 
     // get the form elements defined in your form HTML above
