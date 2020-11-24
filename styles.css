@@ -378,12 +378,17 @@ body {
 .project-info:hover,
 .project-info:active {
   text-decoration: none;
-  color: #fff;
   margin: 0 10px;
   display: inline-block;
 }
 
+.project-info a {
+  color: #fff;
+  font-size: 1.5em;
+}
+
 .project-info a:hover {
+  color: #f05454;
   transform: scale(1.2);
   transition: all 200ms ease-in;
 }
