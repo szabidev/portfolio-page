@@ -162,7 +162,26 @@ body {
 }
 
 .name {
+  opacity: 0;
   text-align: center;
+  animation: moveInLeft 1s ease-out 1.5s;
+  animation-fill-mode: forwards;
+}
+
+/* Animate left side with picture */
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  80% {
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 .name h3 {
@@ -189,6 +208,27 @@ body {
   width: 45%;
   border-radius: 2em;
   box-shadow: 0.3em 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.75);
+}
+
+/* Animate right side with text */
+.about-me {
+  opacity: 0;
+  animation: moveInRight 1s ease-out 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  80% {
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 .welcome {
@@ -609,11 +649,9 @@ button[type="submit"]:hover {
   .info ul {
     margin-top: 50%;
   }
-
   .info ul li a {
     font-size: 10px;
   }
-
   .skills {
     height: 100%;
     display: flex;
