@@ -162,10 +162,9 @@ body {
 }
 
 .name {
-  opacity: 0;
   text-align: center;
   animation: moveInLeft 1s ease-out 1.5s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
 }
 
 /* Animate left side with picture */
@@ -212,9 +211,8 @@ body {
 
 /* Animate right side with text */
 .about-me {
-  opacity: 0;
   animation: moveInRight 1s ease-out 2.5s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
 }
 
 @keyframes moveInRight {
