@@ -17,7 +17,8 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: transparent;
+  background: linear-gradient(to right, #999b84, #707070);
+  background: -webkit-linear-gradient(to right, #999b84, #707070);
   width: 100%;
   position: fixed;
   display: flex;
@@ -25,6 +26,7 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between;
   z-index: 100;
+  border-bottom: 3px solid #f05454;
 }
 
 .myName a,
@@ -68,7 +70,7 @@ body {
     box-shadow: 0 0 0 4px rgba(240, 84, 84, 0.3);
   }
   100% {
-    box-shadow: 0 0 0 4px rgba(240, 84, 84, 0.1);
+    box-shadow: 0 0 0 6px rgba(240, 84, 84, 0.1);
   }
 }
 
@@ -163,7 +165,7 @@ body {
 
 .name {
   text-align: center;
-  animation: moveInLeft 1s ease-out 1.5s;
+  animation: moveInLeft 1s ease-out 1s;
   animation-fill-mode: backwards;
 }
 
@@ -211,7 +213,7 @@ body {
 
 /* Animate right side with text */
 .about-me {
-  animation: moveInRight 1s ease-out 2.5s;
+  animation: moveInRight 1s ease-out 1.5s;
   animation-fill-mode: backwards;
 }
 
