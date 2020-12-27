@@ -373,7 +373,7 @@ body {
 
 .projects-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-items: center;
   margin-top: 5%;
 }
@@ -382,7 +382,7 @@ body {
   border: 3px solid #f05454;
   overflow: hidden;
   border-radius: 25px;
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -621,6 +621,7 @@ button[type="submit"]:hover {
   }
   #about {
     height: 100%;
+    padding-top: 100px;
   }
   .text-about-me {
     grid-template-columns: 1fr;
